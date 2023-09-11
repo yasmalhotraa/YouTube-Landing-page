@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youtube Clone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Styles/general.css" />
+    <link rel="stylesheet" href="Styles/header.css" />
+    <link rel="stylesheet" href="Styles/video.css" />
+    <link rel="stylesheet" href="Styles/sidebar.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="left-section">
+        <img class="menupic" src="Icons/menu.svg" alt="" />
+        <a href="https://www.youtube.com/">
+          <img class="youtubelogo" src="Icons/youtube-logo.svg" />
+        </a>
+      </div>
+      <div class="middle-section">
+        <input class="searchbar" type="text" placeholder="Search" />
+        <button class="search-button">
+          <img class="search-icon" src="Icons/search.svg" />
+          <!--used position absolute into position relative to create a tooltip-->
+          <div class="tooltip">Search</div>
+        </button>
+        <button class="voicesearch-button">
+          <img class="voicesearch-icon" src="Icons/voice-search-icon.svg" />
+          <div class="tooltip">Search with your voice</div>
+        </button>
+      </div>
+      <div class="right-section">
+        <div class="upload-icon-container">
+          <img class="upload-icon" src="Icons/upload.svg" />
+          <div class="tooltip">Create</div>
+        </div>
+        <div class="youtube-apps-container">
+          <img class="youtubeapps-icon" src="Icons/youtube-apps.svg" />
+          <div class="toolkit">YouTube apps</div>
+        </div>
+        <div class="notifications-container">
+          <img class="notifications-icon" src="Icons/notifications.svg" />
+          <div class="notifications-count">3</div>
+          <div class="toolkit">Notifications</div>
+        </div>
+        <img class="yash-icon" src="Channels-ppf/yash.png" />
+      </div>
+    </div>
+
+    <div class="sidebar">
+      <div class="sidebar-link">
+        <img src="Icons/home.svg" />
+        <div>Home</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="Icons/explore.svg" />
+        <div>Explore</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="Icons/subscriptions.svg" />
+        <div>Subscriptions</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="Icons/originals.svg" />
+        <div>Originals</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="Icons/youtube-music.svg" />
+        <div>Youtube Music</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="Icons/library.svg" />
+        <div>Library</div>
+      </div>
+    </div>
+
+    <div class="videogrid">
+      <!--Video preview 1-->
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=AETFvQonfV8">
+            <img class="thumbnail" src="Thumbnails/Hanumanji.webp" />
+          </a>
+
+          <div class="video-time">9:42</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-pic">
+            <a href="https://www.youtube.com/@TSeriesBhaktiSagar">
+              <img class="pfp" src="Channels-ppf/Bhakti.jpg" />
+            </a>
+            <div class="channel-info-container">
+              <div class="pic-container">
+                <img class="image" src="Channels-ppf/Bhakti.jpg" />
+              </div>
+              <div class="data-container">
+                <p class="name">T-Series Bhakti Sagar</p>
+                <p class="subscribers">62.2M subscribers</p>
+              </div>
+            </div>
+          </div>
+          <div class="video-info">
+            <a
+              href="https://www.youtube.com/watch?v=AETFvQonfV8"
+              class="video-title-link"
+            >
+              <p class="videotitle">
+                हनुमान चालीसा उपशीर्षक के साथ [पूरा गीत] गुलशन कुमार, हरिहरन -
+                श्री हनुमान चालीसा
+              </p>
+            </a>
+            <a
+              href="https://www.youtube.com/@TSeriesBhaktiSagar"
+              class="channel-link"
+            >
+              <p class="video-author">T-Series Bhakti Sagar</p>
+            </a>
+
+            <p class="video-stats">3.3B views &#183; 12 years ago</p>
+          </div>
+        </div>
+      </div>
+
+      <!--video preview 2-->
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=Xy1Pzu1yZGg">
+            <img class="thumbnail" src="Thumbnails/mqdefault.jpg" />
+          </a>
+
+          <div class="video-time">3:03</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-pic">
+            <a href="https://www.youtube.com/channel/UCLWhAI-T6zhBxXWSUp8DJPg">
+              <img class="pfp" src="Channels-ppf/channels4_profile.jpg" />
+            </a>
+            <div class="channel-info-container">
+              <div class="pic-container">
+                <img class="image" src="Channels-ppf/channels4_profile.jpg" />
+              </div>
+              <div class="data-container">
+                <p class="name">Yashraj</p>
+                <p class="subscribers">66.2K subscribers</p>
+              </div>
+            </div>
+          </div>
+          <div class="video-info">
+            <a
+              href="https://www.youtube.com/watch?v=Xy1Pzu1yZGg"
+              class="video-title-link"
+            >
+              <p class="videotitle">
+                Dhundhala - Yashraj, Talwiinder, Dropped Out
+              </p>
+            </a>
+            <a
+              href="https://www.youtube.com/channel/UCLWhAI-T6zhBxXWSUp8DJPg"
+              class="channel-link"
+            >
+              <p class="video-author">Yashraj</p>
+            </a>
+            <p class="video-stats">7.6M views &#183; 1 year ago</p>
+          </div>
+        </div>
+      </div>
+
+      <!--Video preview 3-->
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=xCs0qjSQNDI">
+            <img class="thumbnail" src="Thumbnails/longback.jpg" />
+          </a>
+
+          <div class="video-time">2:43</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-pic">
+            <a href="https://www.youtube.com/@panjaabrecords">
+              <img class="pfp" src="Channels-ppf/arjan.jpg" />
+            </a>
+            <div class="channel-info-container">
+              <div class="pic-container">
+                <img class="image" src="Channels-ppf/arjan.jpg" />
+              </div>
+              <div class="data-container">
+                <p class="name">Panj-aab Records</p>
+                <p class="subscribers">2.57M subscribers</p>
+              </div>
+            </div>
+          </div>
+          <div class="video-info">
+            <a
+              href="https://www.youtube.com/watch?v=xCs0qjSQNDI"
+              class="video-title-link"
+            >
+              <p class="videotitle">
+                Arjan Dhillon : Long Back (Official Video)
+              </p>
+            </a>
+            <a
+              href="https://www.youtube.com/@panjaabrecords"
+              class="channel-link"
+            >
+              <p class="video-author">Panj-aab Records</p>
+            </a>
+
+            <p class="video-stats">13M views &#183; 1 month ago</p>
+          </div>
+        </div>
+      </div>
+
+      <!--Video preview 4-->
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=kd-ABokZCkA">
+            <img class="thumbnail" src="Thumbnails/dude.jpg" />
+          </a>
+
+          <div class="video-time">21:25</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-pic">
+            <a href="https://www.youtube.com/@dudeperfect">
+              <img class="pfp" src="Channels-ppf/dudeperfect.jpg" />
+            </a>
+            <div class="channel-info-container">
+              <div class="pic-container">
+                <img class="image" src="Channels-ppf/dudeperfect.jpg" />
+              </div>
+              <div class="data-container">
+                <p class="name">Dude Perfect</p>
+                <p class="subscribers">59.6M subscribers</p>
+              </div>
+            </div>
+          </div>
+          <div class="video-info">
+            <a
+              href="https://www.youtube.com/watch?v=kd-ABokZCkA"
+              class="video-title-link"
+            >
+              <p class="videotitle">The Survivor Games</p>
+            </a>
+            <a href="https://www.youtube.com/@dudeperfect" class="channel-link">
+              <p class="video-author">Dude Perfect</p>
+            </a>
+
+            <p class="video-stats">7.3M views &#183; 3 weeks ago</p>
+          </div>
+        </div>
+      </div>
+
+      <!--Video preview 5-->
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=0S0hCzau_YU">
+            <img class="thumbnail" src="Thumbnails/tech.jpg" />
+          </a>
+
+          <div class="video-time">9:33</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-pic">
+            <a href="https://www.youtube.com/@TechBurner">
+              <img class="pfp" src="Channels-ppf/techburner.jpg" />
+            </a>
+            <div class="channel-info-container">
+              <div class="pic-container">
+                <img class="image" src="Channels-ppf/techburner.jpg" />
+              </div>
+              <div class="data-container">
+                <p class="name">Tech Burner</p>
+                <p class="subscribers">10.8M subscribers</p>
+              </div>
+            </div>
+          </div>
+          <div class="video-info">
+            <a
+              href="https://www.youtube.com/watch?v=0S0hCzau_YU"
+              class="video-title-link"
+            >
+              <p class="videotitle">
+                Motorola Razr 40 Ultra Unboxing ! *Majedaar Flip Features*
+              </p>
+            </a>
+            <a href="https://www.youtube.com/@TechBurner" class="channel-link">
+              <p class="video-author">Tech Burner</p>
+            </a>
+
+            <p class="video-stats">1.4M views &#183; 1 month ago</p>
+          </div>
+        </div>
+      </div>
+
+      <!--Video preview 6-->
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=0-7IHOXkiV8">
+            <img class="thumbnail" src="Thumbnails/kaled.jpg" />
+          </a>
+
+          <div class="video-time">3:35</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-pic">
+            <a href="https://www.youtube.com/@Kaleoofficial">
+              <img class="pfp" src="Channels-ppf/way.jpg" />
+            </a>
+            <div class="channel-info-container">
+              <div class="pic-container">
+                <img class="image" src="Channels-ppf/way.jpg" />
+              </div>
+              <div class="data-container">
+                <p class="name">KALEO</p>
+                <p class="subscribers">9.41M subscribers</p>
+              </div>
+            </div>
+          </div>
+          <div class="video-info">
+            <a
+              href="https://www.youtube.com/watch?v=0-7IHOXkiV8"
+              class="video-title-link"
+            >
+              <p class="videotitle">
+                KALEO - Way Down We Go (Official Music Video)
+              </p>
+            </a>
+            <a
+              href="https://www.youtube.com/@Kaleoofficial"
+              class="channel-link"
+            >
+              <p class="video-author">KALEO</p>
+            </a>
+
+            <p class="video-stats">572M views &#183; 7 years ago</p>
+          </div>
+        </div>
+      </div>
+
+      <!--Video preview 7-->
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=ixmxOlcrlUc">
+            <img class="thumbnail" src="Thumbnails/thenx.webp" />
+          </a>
+          <div class="video-time">13:17</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-pic">
+            <a
+              href="https://www.youtube.com/c/OFFICIALTHENXSTUDIOS"
+              class="channel-link"
+            >
+              <img class="pfp" src="Channels-ppf/thenxppf.jpeg" />
+            </a>
+            <div class="channel-info-container">
+              <div class="pic-container">
+                <img class="image" src="Channels-ppf/thenxppf.jpeg" />
+              </div>
+              <div class="data-container">
+                <p class="name">Thenx</p>
+                <p class="subscribers">7.69M subscribers</p>
+              </div>
+            </div>
+          </div>
+          <div class="video-info">
+            <a
+              href="https://www.youtube.com/watch?v=ixmxOlcrlUc"
+              class="video-title-link"
+            >
+              <p class="videotitle">The SECRET to Super Human STRENGTH</p>
+            </a>
+            <a
+              href="https://www.youtube.com/c/OFFICIALTHENXSTUDIOS"
+              class="channel-link"
+            >
+              <p class="video-author">Thenx</p>
+            </a>
+
+            <p class="video-stats">20M views &#183; 3 year ago</p>
+          </div>
+        </div>
+      </div>
+
+      <!--Video preview 8-->
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=GwNMqMMwKiY">
+            <img class="thumbnail" src="Thumbnails/zachvideo.webp" />
+          </a>
+
+          <div class="video-time">4:31</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-pic">
+            <a href="https://www.youtube.com/@ZachKing">
+              <img class="pfp" src="Channels-ppf/Zachking.jpg" />
+            </a>
+            <div class="channel-info-container">
+              <div class="pic-container">
+                <img class="image" src="Channels-ppf/Zachking.jpg" />
+              </div>
+              <div class="data-container">
+                <p class="name">Zach King</p>
+                <p class="subscribers">22.2M subscribers</p>
+              </div>
+            </div>
+          </div>
+          <div class="video-info">
+            <a
+              href="https://www.youtube.com/watch?v=GwNMqMMwKiY"
+              class="video-title-link"
+            >
+              <p class="videotitle">
+                Best of Zach King Magic Compilation 2023 So Far
+              </p>
+            </a>
+            <a href="https://www.youtube.com/@ZachKing" class="channel-link">
+              <p class="video-author">Zach King</p>
+            </a>
+
+            <p class="video-stats">9.2M views &#183; 1 month ago</p>
+          </div>
+        </div>
+      </div>
+
+      <!--Video preview 9-->
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=kcDatu-SbrI">
+            <img class="thumbnail" src="Thumbnails/Larry.webp" />
+          </a>
+
+          <div class="video-time">3:35</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-pic">
+            <a href="https://www.youtube.com/@LarryWheels">
+              <img class="pfp" src="Channels-ppf/Larrywheels.jpg" />
+            </a>
+            <div class="channel-info-container">
+              <div class="pic-container">
+                <img class="image" src="Channels-ppf/Larrywheels.jpg" />
+              </div>
+              <div class="data-container">
+                <p class="name">Larry Wheels</p>
+                <p class="subscribers">2.81M subscribers</p>
+              </div>
+            </div>
+          </div>
+          <div class="video-info">
+            <a
+              href="https://www.youtube.com/watch?v=kcDatu-SbrI"
+              class="video-title-link"
+            >
+              <p class="videotitle">WORLD RECORD 300 lbs 1-Arm Bench Press!</p>
+            </a>
+            <a href="https://www.youtube.com/@LarryWheels" class="channel-link">
+              <p class="video-author">Larry Wheels</p>
+            </a>
+
+            <p class="video-stats">167K views &#183; 2 days ago</p>
+          </div>
+        </div>
+      </div>
+
+      <!--Video preview 10-->
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=1ArVtCQqQRE">
+            <img class="thumbnail" src="Thumbnails/typing.webp" />
+          </a>
+
+          <div class="video-time">3:35</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-pic">
+            <a href="https://www.youtube.com/@aliabdaal">
+              <img class="pfp" src="Channels-ppf/aliabdaal.jpg" />
+            </a>
+            <div class="channel-info-container">
+              <div class="pic-container">
+                <img class="image" src="Channels-ppf/aliabdaal.jpg" />
+              </div>
+              <div class="data-container">
+                <p class="name">Ali Abdaal</p>
+                <p class="subscribers">4.67M subscribers</p>
+              </div>
+            </div>
+          </div>
+          <div class="video-info">
+            <a
+              href="https://www.youtube.com/watch?v=1ArVtCQqQRE"
+              class="video-title-link"
+            >
+              <p class="videotitle">
+                How I Type REALLY Fast (156 Words per Minute)
+              </p>
+            </a>
+            <a href="https://www.youtube.com/@aliabdaal" class="channel-link">
+              <p class="video-author">Ali Abdaal</p>
+            </a>
+
+            <p class="video-stats">9.9M views &#183; 3 years ago</p>
+          </div>
+        </div>
+      </div>
+
+      <!--Video preview 11-->
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=yOI751lUrpg">
+            <img class="thumbnail" src="Thumbnails/car.webp" />
+          </a>
+
+          <div class="video-time">3:35</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-pic">
+            <a href="https://www.youtube.com/@Sidemen">
+              <img class="pfp" src="Channels-ppf/sidemen.jpg" />
+            </a>
+            <div class="channel-info-container">
+              <div class="pic-container">
+                <img class="image" src="Channels-ppf/sidemen.jpg" />
+              </div>
+              <div class="data-container">
+                <p class="name">Sidemen</p>
+                <p class="subscribers">19M subscribers</p>
+              </div>
+            </div>
+          </div>
+          <div class="video-info">
+            <a
+              href="https://www.youtube.com/watch?v=yOI751lUrpg"
+              class="video-title-link"
+            >
+              <p class="videotitle">SIDEMEN £1,000 CAR CHALLENGE</p>
+            </a>
+            <a href="https://www.youtube.com/@Sidemen" class="channel-link">
+              <p class="video-author">Sidemen</p>
+            </a>
+
+            <p class="video-stats">7.7M views &#183; 6 days ago</p>
+          </div>
+        </div>
+      </div>
+
+      <!--Video preview 12-->
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=jObOjhUkf50">
+            <img class="thumbnail" src="Thumbnails/mrbeast.webp" />
+          </a>
+
+          <div class="video-time">3:35</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-pic">
+            <a href="https://www.youtube.com/@MrBeast">
+              <img class="pfp" src="Channels-ppf/mrbeast.jpg" />
+            </a>
+            <div class="channel-info-container">
+              <div class="pic-container">
+                <img class="image" src="Channels-ppf/mrbeast.jpg" />
+              </div>
+              <div class="data-container">
+                <p class="name">MrBeast</p>
+                <p class="subscribers">180M subscribers</p>
+              </div>
+            </div>
+          </div>
+          <div class="video-info">
+            <a
+              href="https://www.youtube.com/watch?v=jObOjhUkf50"
+              class="video-title-link"
+            >
+              <p class="videotitle">$1 vs $250,000 Vacation!</p>
+            </a>
+            <a href="https://www.youtube.com/@MrBeast" class="channel-link">
+              <p class="video-author">MrBeast</p>
+            </a>
+
+            <p class="video-stats">135M views &#183; 7 years ago</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

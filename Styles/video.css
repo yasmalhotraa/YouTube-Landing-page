@@ -1,0 +1,133 @@
+.thumbnail {
+  width: 100%;
+  object-fit: contain;
+  margin-bottom: 0px;
+}
+
+.video-info-grid {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+
+.pfp {
+  width: 36px;
+  border-radius: 50px;
+}
+.videotitle {
+  margin-bottom: 10px;
+  margin-top: 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+@media (min-width: 1000px) {
+  .videotitle {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.video-title-link {
+  text-decoration: none;
+  color: black;
+}
+.thumbnail-row {
+  margin-bottom: 8px;
+  position: relative;
+}
+.video-author,
+.video-stats {
+  font-size: 12px;
+  color: rgb(96, 96, 96);
+}
+.video-author {
+  margin-bottom: 4px;
+}
+@media (min-width: 1000px) {
+  .video-author,
+  .video-stats {
+    font-size: 14px;
+  }
+}
+.channel-link {
+  text-decoration: none;
+}
+.videogrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 40px;
+}
+
+@media (max-width: 750px) {
+  .videogrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 751px) and (max-width: 999px) {
+  .videogrid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1000px) {
+  .videogrid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.video-time {
+  background-color: black;
+  color: white;
+  position: absolute;
+  right: 5px;
+  bottom: 8px;
+  font-family: roboto, arial;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px 4px;
+  border-radius: 2px;
+}
+.channel-pic {
+  position: relative;
+}
+
+.channel-info-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 200px;
+  max-height: 50px;
+  position: absolute;
+  background-color: white;
+  align-items: center;
+  padding: 8px 10px;
+  pointer-events: none;
+  overflow: hidden;
+  left: 0;
+  top: 40px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.channel-pic:hover .channel-info-container {
+  opacity: 1;
+}
+.pic-container {
+  width: 50px;
+  margin-right: 10px;
+}
+.image {
+  width: 50px;
+  border-radius: 25px;
+}
+.data-container {
+  flex: 1;
+}
+.name {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.subscribers {
+  font-size: 12px;
+}

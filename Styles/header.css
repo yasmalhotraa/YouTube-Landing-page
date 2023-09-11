@@ -1,0 +1,205 @@
+.header {
+  height: 55px;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: white;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(220, 220, 220);
+  z-index: 100;
+}
+.left-section {
+  display: flex;
+  align-items: center;
+}
+.menupic {
+  height: 24px;
+  margin-left: 24px;
+  margin-right: 20px;
+}
+.youtubelogo {
+  height: 20px;
+}
+.middle-section {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  margin-left: 70px;
+  margin-right: 35px;
+  max-width: 500px;
+}
+.searchbar {
+  flex: 1;
+  height: 36px;
+  padding-left: 10px;
+  width: 0;
+  font-size: 16px;
+  border: 1px solid lightgrey;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+}
+.searchbar::placeholder {
+  font-family: roboto, arial;
+  font-size: 16px;
+}
+.search-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 66px;
+  background-color: rgb(240, 240, 240);
+  border-width: 1px;
+  border-style: solid;
+  border-color: lightgrey;
+  margin-left: -1px;
+  margin-right: 10px;
+  position: relative;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.search-button .tooltip,
+.voicesearch-button .tooltip {
+  font-family: roboto, arial;
+  position: absolute;
+  background-color: grey;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: -30px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+.search-button:hover .tooltip,
+.voicesearch-button:hover .tooltip,
+.upload-icon-container:hover .tooltip {
+  opacity: 1;
+}
+
+.search-icon {
+  height: 25px;
+}
+.voicesearch-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(245, 245, 245);
+  position: relative;
+}
+.voicesearch-icon {
+  height: 24px;
+}
+
+.right-section {
+  margin-right: 20px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+.upload-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.upload-icon-container .tooltip {
+  font-family: roboto, arial;
+  position: absolute;
+  background-color: grey;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: -38px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+.upload-icon {
+  height: 24px;
+}
+
+.youtube-apps-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.youtube-apps-container .toolkit {
+  position: absolute;
+  background-color: grey;
+  color: white;
+  border-radius: 2px;
+  white-space: nowrap;
+  pointer-events: none;
+  padding: 4px 8px;
+  font-size: 12px;
+  font-family: roboto, arial;
+  bottom: -38px;
+  opacity: 0;
+  transition: opacity 0.15s;
+}
+.youtube-apps-container:hover .toolkit {
+  opacity: 1;
+}
+.youtubeapps-icon {
+  height: 24px;
+}
+
+.notifications-icon {
+  height: 24px;
+}
+.notifications-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.notifications-container .toolkit {
+  position: absolute;
+  bottom: -38px;
+  background-color: grey;
+  color: white;
+  padding: 4px 8px;
+  font-size: 12px;
+  font-family: roboto, arial;
+  border-radius: 2px;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.15s;
+}
+.notifications-container:hover .toolkit {
+  opacity: 1;
+}
+.notifications-count {
+  position: absolute;
+  top: -2px;
+  right: -5px;
+  background-color: rgb(200, 0, 0);
+  color: white;
+  font-family: roboto, arial;
+  font-size: 11px;
+  padding: 2px 5px;
+  border-radius: 10px;
+}
+.yash-icon {
+  height: 32px;
+  border-radius: 16px;
+}
